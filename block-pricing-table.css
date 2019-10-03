@@ -1,0 +1,98 @@
+.pricing-table {
+	font-size: 18px;
+	width: 100%;
+}
+
+.pricing-table .plan {
+	background: #fff;
+	border-radius: 8px;
+	padding: 4rem 1rem;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+	text-align: center;
+	color: #444555;
+	position: relative;
+	margin: .5rem;
+	z-index: 1;
+}
+
+.pricing-table .plan.highlighted {
+	padding-top: 8rem;
+	z-index: 2;
+}
+
+.pricing-table h1 {
+	font-weight: bold;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.pricing-table h2 {
+	font-weight: normal;
+	font-size: 18px;
+	color: #9A9CB8;
+}
+ 
+.pricing-table h3 {
+	font-weight: black;
+	font-size: 55px;
+	line-height: 69px;
+	color: #14172C;
+}
+
+.pricing-table h1::before,
+.pricing-table h2::before {
+	display: none;
+}
+
+.pricing-table p + .btn {
+	margin-top: 2rem;
+}
+
+.pricing-table a.btn {
+	display: inline-block;
+	padding: 1rem 0;
+	width: 10rem;
+	border-radius: 100px;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: transform .2s;
+}
+
+.pricing-table .btn:hover {
+	transform: scale(0.95);
+}
+
+.pricing-table .badge {
+	position: absolute;
+	top: 4rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #00e899;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: .5rem .75rem;
+	border-radius: 8px;
+}
+
+@media screen and (min-width: 2000px) {
+	.pricing-table {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pricing-table .plan {
+		width: 30%;
+		margin: 0 0 0 -1.5rem;
+	}
+
+	.pricing-table .plan.highlighted {
+		padding-bottom: 8rem;
+	}
+}  

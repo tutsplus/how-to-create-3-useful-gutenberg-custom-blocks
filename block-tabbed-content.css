@@ -1,0 +1,76 @@
+.tabs {
+    color: #444555;
+    font-size: 18px;
+}
+
+.tabs .panel {
+    display: none;
+}
+
+.tabs .panel.active {
+    display: block;
+}
+
+.tabs .tab-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs .tab-links a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #9A9CB8;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin: .25rem 0;
+    transition: color .2s;
+    outline: 0;
+}
+
+.tabs .tab-links a.active {
+    color: #14172C;
+    padding: 3rem 2rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.tabs .tab-links a.active::before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00E899;
+}
+
+.tabs .tab-links a:hover {
+    color: #14172C;
+}
+
+@media screen and (min-width: 1500px) {
+    .tabs {
+        display: flex;
+        padding: 0 4rem;
+    }
+
+    .tabs .tab-panels {
+        margin-left: 4rem;
+    }
+
+    .tabs .tab-links a {
+        width: 18rem;
+        transition: all .2s;
+    }
+
+    .tabs .tab-links a.active, .tabs .tab-links a:hover {
+        transform: scale(1.05);
+    }
+}

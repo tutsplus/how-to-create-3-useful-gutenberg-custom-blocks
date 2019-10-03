@@ -1,0 +1,52 @@
+.toggles {
+    color: #b5b5b5;
+    font-size: 18px;
+}
+
+.toggles details {
+    margin-bottom: 0.75rem;
+}
+
+.toggles details > div {
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+.toggles details summary {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.toggles details summary::-webkit-details-marker {
+    display: none; /* for chrome */
+}
+
+.toggles details summary::before {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+.toggles details summary:hover {
+    color: #4d4d4d;
+}
+
+.toggles details[open] {
+    color: #4d4d4d;
+}
+
+.toggles details[open] summary::before {
+    content: "\f077";
+}
